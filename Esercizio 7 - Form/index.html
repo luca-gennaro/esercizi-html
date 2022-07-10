@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio - Form (pair programming con Federica Forti)</title>
+</head>
+<body>
+    <form action="#" method="get">
+    <fieldset>
+        <legend>Dati personali</legend>
+        <div>
+        <label for="fname">Nome</label> <br>
+        <input type="text" id="fname" name="first name" required>
+       </div>
+
+       <div>
+        <label for="lname">Cognome</label> <br>
+        <input type="text" id="lname" name="last name" required>
+       </div>
+
+       <div>
+        <label for="date_birth">Data di nascita</label> <br>
+        <input type="date" name="date_birth" id="date_birth">
+        </div>
+
+        <div>
+            <label for="phone">Cellulare</label> <br>
+            <input type="tel" id="phone" name="cellulare">
+        </div>
+
+        <div>
+            <label for="email">Email</label> <br>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="password">Password</label> <br>
+            <input type="password" id="password" name="keyword">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Abbonamento</legend>
+        <div>
+            <select name="abbonamento" id="abbonamento">
+                <option value="sel_abbonamento" selected disabled>Seleziona piano di abbonamento</option>
+                <option value="abb_free">Piano free</option>
+                <optgroup label="Piani Premium">
+                    <option value="silver"> Silver 9,99€</option>
+                    <option value="gold"> Gold 19,99€</option>
+                    <option value="platinum"> Platinum 34,99€</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="pro">Aggiungi i vantaggi PRO con soli 3,99€</label>
+            <input type="checkbox" name="pro" id="pro">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Dati di pagamento</legend>
+        
+        <div>
+        <label for="numero_carta">Numero della carta</label>
+        <input type="tel" id="numero_carta" name="numero_carta" minlength="16" maxlength="16">
+        </div>
+
+        <div>
+        <label for="cvc">CVC</label>
+        <input type="tel" id="cvc" name="cvc" maxlength="3">
+        </div>
+
+        <div>
+            <label for="expire_date">Data di scadenza</label>
+            <input type="month" name="expire_date" id="expire_date">
+        </div>
+
+        <div>
+            <label for="indirizzo">Indirizzo di fatturazione</label>
+            <input type="text" id="indirizzo" name="indirizzo">
+        </div>
+    </fieldset>
+
+    <div>
+        <button type="submit"> Sottoscrivi</button>
+    </div>
+</form>
+
+</body>
+</html>
